@@ -46,9 +46,11 @@ body{
 }
 h1{
     font-size: 46px;
+    font-family: "AGENCYFB"
 }
 h2{
     font-size: 24px;
+    font-family: "AGENCYFB"
 }
 p{
     font-size: 16px;
@@ -76,7 +78,7 @@ p{
     padding: 0;
     /* display: flex; */
        
-    font-family:"Agency FB";
+    font-family: "AGENCYFB"
 }
 li{
     list-style: none;
@@ -114,7 +116,7 @@ ul{
     font-weight: bold;
     border-bottom: 3px solid #FD5927;
     width: 38%;
-    font-family:"Agency FB";
+    font-family: "AGENCYFB"
 
 }
 
@@ -172,7 +174,7 @@ ul{
 }
 .about-copy h2{
     font-size: 26pt;
-    
+    font-family: "AGENCYFB"
 }
 
 
@@ -196,6 +198,7 @@ ul{
 }
 .gallery-header h2{
     font-size: 26pt;
+    font-family: "AGENCYFB"
 }
 
 .gallery{
@@ -296,10 +299,12 @@ form button{
 .contact h2{
     font-size: 26px;
     margin-top: 18px;
+    font-family: "AGENCYFB"
 
 }
 .contact h1{
     font-size: 46px;
+    font-family: "AGENCYFB"
     
 }
 .contact span{
@@ -764,6 +769,11 @@ footer{
 }
 
 @media only screen and (min-width: 360px) and (max-width: 551px) {
+    .qn{
+        padding-left: 10px;
+        font-family: "AgencyFB";
+        
+    }
     .nav{
         width: 100%
     }
@@ -790,16 +800,25 @@ footer{
         flex-direction: column;
         align-items: center;
         font-size: 12px;
+        background-blend-mode: multiply;
+        
     }
     .hero-copy h2{
-        width: 95%;
+        width: 274px;
         border:none;
         font-size: 36px;
+        font-family: "AgencyFB";
+        background-color: #ffebe570
     }
-    .hero-copy p{
-        font-size: 14px;
+    .hero-copy p, .clr{
+        font-size: 22px;
+        font-family: "AgencyFB";
+        font-weight: bold;
+        
     }
-
+    .clr{
+        background-color:#ffebe570
+    }
     .line{
         background-color: #FD5927;
         height: 2px;
@@ -837,8 +856,8 @@ footer{
         justify-content: center;
         width:100% ;
     }
-    .about p{
-        
+    .about-copy h2{
+        font-family: "AGENCYFB"
     }
 
     .about img{
@@ -856,6 +875,10 @@ footer{
     
     margin-top: 40px;
     margin-bottom: -30px;
+    font-family: "AGENCYFB"
+    }
+    .gall-head h2{
+        font-family: "AGENCYFB"
     }
 
     .gallery-header{
