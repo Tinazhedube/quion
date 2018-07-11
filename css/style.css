@@ -2,7 +2,7 @@
     margin: 0;
     border: none;
     padding: 0;
-    font-family:"Agency-FB";
+    font-family:"Agency FB";
     box-sizing: border-box;
     outline: none;
     /* border: 1px solid red; */
@@ -28,6 +28,7 @@ body{
     align-items: center;
     overflow-x: hidden;
     width: 100%;
+    font-family:"Agency FB";
 }
 .nav{
     border-top: 3px solid #FD5927;
@@ -41,6 +42,7 @@ body{
     position: fixed;
     top: 0;
     z-index: 99;
+    font-family:"Agency FB";
 }
 h1{
     font-size: 46px;
@@ -62,7 +64,9 @@ p{
     background-color: black;
     height: 100%;
     padding: 20px 0;
+    font-family:"Agency FB";
 }
+
 .qn{
     font-size: 24px;
     /* display: flex; */
@@ -72,6 +76,7 @@ p{
     padding: 0;
     /* display: flex; */
     height: 29px;   
+    font-family:"Agency FB";
 }
 li{
     list-style: none;
@@ -109,6 +114,7 @@ ul{
     font-weight: bold;
     border-bottom: 3px solid #FD5927;
     width: 38%;
+    font-family:"Agency FB";
 
 }
 
@@ -116,6 +122,7 @@ ul{
     font-size: 20px;
     margin: 10px 0;
     margin-bottom: 20px;
+    font-family:"Agency FB";
 }
 
 
