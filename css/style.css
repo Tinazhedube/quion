@@ -5,7 +5,20 @@
     font-family:"Agency FB";
     box-sizing: border-box;
     outline: none;
+    vertical-align: baseline;
     /* border: 1px solid red; */
+}
+
+@font-face{
+    font-family: "Agency Fb";
+    src: url(../fonts/agency-fb_[allfont.net].ttf);
+}
+@font-face{
+    font-family: "AgencyFb";
+    src: url(../fonts/AgencyFB-Bold.ttf);
+}
+.menu{
+    display: none;
 }
 
 a{
@@ -104,7 +117,7 @@ ul{
     justify-content: center;
     align-items: center;
     overflow: hidden;
-    
+    border-bottom: 1px solid #fd592773;
 
 }
 .hero-copy{
@@ -116,8 +129,8 @@ ul{
     font-weight: bold;
     border-bottom: 3px solid #FD5927;
     width: 38%;
-    font-family: "AGENCYFB"
-
+    font-family: "AGENCYFB";
+    display: inline;
 }
 
 .hero-copy p{
@@ -130,13 +143,15 @@ ul{
 
 
 .a{
+    font-family: "agencyfb";
     text-decoration: none;
-    font-size: 20px;
+    font-size: 15px;
     border: 2px solid #FD5927;
     border-radius: 16px;
     color: black;
     margin: 10px 0;
-    padding: 8px 16px;
+    padding: 3px 20px;
+    font-weight: bold;
 }
 
 .abtt{
@@ -147,7 +162,8 @@ ul{
     align-items: center;
     background-color: #fccec0;
     height: 596px;
-    overflow: hidden
+    overflow: hidden;
+    border-bottom: 1px solid #d8afa2;
 }
 
 .about{
@@ -181,6 +197,7 @@ ul{
 .about-copy p{
     columns: 2;
     margin-left: 10px;
+    color: #4e4d4d
     
 }
 
@@ -366,7 +383,7 @@ footer{
     align-items: center;
     height: 200px;
     background-size: cover;
-    border-top: 1px solid white;
+    border-top: 1px solid #736f6f;
 }
 .foot{
     width: 800px;
@@ -388,8 +405,10 @@ footer{
     display: flex;
     margin: -3px;
 }
-
-@media only screen and (min-width: 451px) and (max-width: 801px) {
+.social-icons > .social-icons img{
+    opacity: 0.4;
+}
+@media only screen and (min-width: 552px) and (max-width: 801px) {
     
 
     a{
@@ -454,7 +473,7 @@ footer{
         font-size: 46px;
         padding: 0;
         /* display: flex; */
-        height: 29px;   
+           
     }
     li{
         list-style: none;
@@ -522,10 +541,12 @@ footer{
         align-items: center;
         background-color: #fccec0;
         height: 596px;
+        position: relative;
+        top: 59px
     }
     
     .about{
-        margin-top: -66px;
+        margin-top: 0;
         width: 80vw;
         position: relative;
         top: 59px;
@@ -534,11 +555,12 @@ footer{
         justify-content: center;
         align-items: center;
         height: 100%;
+        overflow: hidden;
+        
+        
     }
     .about-copy{
         width:100% ;
-        
-       
     }
     
     .about img{
@@ -576,11 +598,14 @@ footer{
     .gallery-header h2{
         font-size: 26pt;
     }
+    .gall-head{
+        padding: 30px;
+    }
     
     .gallery{
         position: relative;
         top: 59px;
-        width: 800px;
+        width: 95%;
         display: grid;
         grid-template-columns: repeat(5, 1fr);
         grid-template-rows: 152px 200px 152px;
@@ -743,7 +768,7 @@ footer{
         border-top: 1px solid white;
     }
     .foot{
-        width: 800px;
+        width: 95%;
         color:#C9C9C9;
         display: flex;
         flex-direction: row;
@@ -768,7 +793,7 @@ footer{
 
 }
 
-@media only screen and (min-width: 360px) and (max-width: 551px) {
+@media only screen and (min-width: 310px) and (max-width: 551px) {
     .qn{
         padding-left: 10px;
         font-family: "AgencyFB";
@@ -776,6 +801,40 @@ footer{
     }
     .nav{
         width: 100%
+    }
+    .top-nav ul{
+        display: none
+    }
+    .menu{
+        width: 50px;
+        overflow: hidden;
+        display:block;
+    }
+    .menu div{
+        height: 3px;
+        width: 100%;
+        background-color: white;
+        margin: 6px;
+        
+    }
+    .clicked1{
+        transform: rotate(57deg);
+        transition-property: transform;
+        transition-duration: 500ms;
+        transition-timing-function: ease-in-out;
+        width: 10px;
+        height: 2px;
+    }
+    .clicked2{
+        transform: rotate(120deg);
+        transition-property: transform;
+        transition-duration: 500ms;
+        transition-timing-function: ease-in-out;
+        width: 10px;
+        height: 2px;
+    }
+    .mid{
+        display: none;
     }
     
     .hero{
@@ -787,7 +846,7 @@ footer{
         flex-direction: row;
         justify-content: space-between;
         align-items: center;
-        width: 100vw;
+        width: 95%;
         color: white;
         background-color: black;
         height: 100%;
